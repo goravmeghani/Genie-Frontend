@@ -42,7 +42,6 @@ Modern React + TypeScript dashboard for AI-powered coding assistance with real-t
 
 ### 1. Clone and Setup
 
-```bash
 # Clone the repository
 git clone https://github.com/goravmeghani/Genie-Frontend.git
 cd Genie-Frontend
