@@ -1,4 +1,3 @@
-```markdown
 # Genie Frontend - AI Coding Assistant Dashboard
 
 Modern React + TypeScript dashboard for AI-powered coding assistance with real-time streaming, GitHub integration, and premium features.
@@ -50,38 +49,35 @@ cd Genie-Frontend
 
 # Install dependencies
 npm install
-```
 
 ### 2. Configure Environment
 
 Create .env.local in the root directory:
 
-```env
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your_anon_key
 VITE_API_BASE_URL=http://localhost:8000
-```
+
 
 **Important:** Never commit .env.local to git. Use .env.example as a template.
 
 ### 3. Run Development Server
 
-```bash
+
 npm run dev
-```
 
 The app will be available at `http://localhost:5173`
 
 ### 4. Build for Production
 
-```bash
+
 npm run build
 npm run preview  # Preview production build locally
-```
+
 
 ## 📁 Project Structure
 
-```
+
 Frontend/
 ├── src/
 │   ├── main.tsx              # App entry point
@@ -122,7 +118,7 @@ Frontend/
 ├── postcss.config.js
 ├── package.json
 └── .env.example
-```
+
 
 ## 🎯 Key Components
 
@@ -151,7 +147,6 @@ Interactive file viewer:
 ## 🔌 API Integration
 
 ### Chat Streaming
-```typescript
 POST /chat/stream
 Content-Type: application/json
 X-Github-Token: <token>
@@ -166,10 +161,8 @@ Response: NDJSON stream
 {"event": "token", "content": "chunk"}
 {"event": "end", "thread_id": "...", "reply": "..."}
 {"event": "error", "message": "..."}
-```
 
 ### Project File Tree
-```typescript
 GET /projects/{project_id}/file-tree?user_id=...&thread_id=...
 
 Response:
@@ -180,7 +173,6 @@ Response:
     {"type": "file", "name": "App.tsx", "path": "src/App.tsx"}
   ]
 }
-```
 
 ## 🔐 Authentication Flow
 
@@ -218,33 +210,27 @@ Response:
 - TypeScript Vue Plugin (Volar)
 
 ### Code Style
-```bash
 # Format code
 npm run format
 
 # Lint
 npm run lint
-```
 
 ## 📦 Deployment
 
 ### Vercel (Recommended)
-```bash
 # Install Vercel CLI
 npm i -g vercel
 
 # Deploy
 vercel
-```
 
 ### Netlify
-```bash
 # Build command
 npm run build
 
 # Publish directory
 dist
-```
 
 ### Environment Variables
 Set these in your deployment platform:
@@ -290,4 +276,3 @@ Set these in your deployment platform:
 ---
 
 Built with ❤️ using React, TypeScript, and Vite
-```
